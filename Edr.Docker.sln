@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edr.Api", "Edr.Api\Edr.Api.csproj", "{C608A87C-2804-4B67-90A0-F8389E11D359}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edr.PodProcessor", "Edr.PodProcessor\Edr.PodProcessor.csproj", "{288960AE-6854-4313-BA7E-6C8D37A555DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C608A87C-2804-4B67-90A0-F8389E11D359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C608A87C-2804-4B67-90A0-F8389E11D359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C608A87C-2804-4B67-90A0-F8389E11D359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C608A87C-2804-4B67-90A0-F8389E11D359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D50F7D94-A8ED-464A-8C2F-11977C81CD49}
+	EndGlobalSection
+EndGlobal
