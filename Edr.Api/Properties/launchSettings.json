@@ -32,6 +32,9 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "publishAllPorts": true,
+      "environmentVariables": {
+        "ComplexProperty__NestedProperty": "this-works-becuase-double__are-translated-to-:"
+      },
       "useSSL": true
     }
   }

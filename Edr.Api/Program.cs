@@ -5,8 +5,9 @@ using Edr.Api.Middleware;
 using Serilog;
 using Serilog.Events;
 
-var assName = typeof(Program).Assembly.GetName().Name;
 
+
+var assName = typeof(Program).Assembly.GetName().Name;
 Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
             .Enrich.FromLogContext()
@@ -20,8 +21,20 @@ try
 {
     Log.Information("Starting web host");
     var builder = WebApplication.CreateBuilder(args);
-    
     builder.Host.UseSerilog();
+
+    var connectionString = builder.Configuration.GetConnectionString("Db");
+    var simpleProperty = builder.Configuration.GetValue<string>("SimpleProperty");
+    var nestedProp = builder.Configuration.GetValue<string>("ComplexProperty:NestedProperty");
+    Log.ForContext("ConnectionString", connectionString)
+        .ForContext("SimpleProperty", simpleProperty)
+        .ForContext("ComplexProperty:NestedProperty", nestedProp)
+        .ForContext("ConnectionString", connectionString)
+        .Information("Loaded configuration!", connectionString);
+
+    var debugView = (builder.Configuration as IConfigurationRoot).GetDebugView();
+    Log.ForContext("ConfigurationDebug", debugView)
+        .Information("Configuration dump.");
 
     // Add services to the container.
     builder.Services.AddScoped<IUserProspectLogic, UserProspectLogic>();
