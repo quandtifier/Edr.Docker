@@ -2,14 +2,23 @@ version: '3.4'
 
 services:
   edr.api:
-    image: ${DOCKER_REGISTRY-}edrapi
     build:
       context: .
       dockerfile: Edr.Api/Dockerfile
     ports:
       - "8080:80"
     environment:
+      - ASPNETCORE_ENVIRONMENT=Development
       - SimpleProperty="hello-from-compose"
+    depends_on:
+      - seq_in_dc
+
+  edr.app:
+    build:
+      context: .
+      dockerfile: Edr.App/Dockerfile
+    ports:
+      - "8081:80"
     depends_on:
       - seq_in_dc
     
@@ -19,3 +28,4 @@ services:
       - "8005:80"
     environment:
       - ACCEPT_EULA=Y
+
