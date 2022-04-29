@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edr.Api", "Edr.Api\Edr.Api.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edr.PodProcessor", "Edr.PodProcessor\Edr.PodProcessor.csproj", "{288960AE-6854-4313-BA7E-6C8D37A555DD}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2526C3BC-F0C6-4BE1-B8A3-25EBFB8A334B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{288960AE-6854-4313-BA7E-6C8D37A555DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2526C3BC-F0C6-4BE1-B8A3-25EBFB8A334B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2526C3BC-F0C6-4BE1-B8A3-25EBFB8A334B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2526C3BC-F0C6-4BE1-B8A3-25EBFB8A334B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2526C3BC-F0C6-4BE1-B8A3-25EBFB8A334B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
