@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>2526c3bc-f0c6-4be1-b8a3-25ebfb8a334b</ProjectGuid>
+    <ProjectGuid>a8f0321c-b610-4587-9354-9ff7a833a852</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>edr.api</DockerServiceName>
