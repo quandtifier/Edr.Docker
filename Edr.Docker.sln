@@ -9,7 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edr.PodProcessor", "Edr.Pod
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2526C3BC-F0C6-4BE1-B8A3-25EBFB8A334B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edr.App", "Edr.App\Edr.App.csproj", "{E4F6F1D8-131E-4CF4-9A5D-95DDC28ED285}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edr.App", "Edr.App\Edr.App.csproj", "{E4F6F1D8-131E-4CF4-9A5D-95DDC28ED285}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{1F07F42D-84D6-42F4-9EED-3C8825F8A6EA}"
+	ProjectSection(SolutionItems) = preProject
+		entrypoint.sh = entrypoint.sh
+		InitializeDatabase.sql = InitializeDatabase.sql
+		sql\setup.sh = sql\setup.sh
+		sql.Dockerfile = sql.Dockerfile
+		sql\wait-for-it.sh = sql\wait-for-it.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
