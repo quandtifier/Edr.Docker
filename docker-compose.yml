@@ -35,3 +35,14 @@ services:
       - '8005:80'      
     environment:
       - ACCEPT_EULA=Y 
+
+  sql_in_dc:
+    build:
+      context: .
+      dockerfile: sql/sql.Dockerfile
+    restart: always
+    ports:
+      - "1440:1433"   
+    environment:      
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Sqlc0ntainersFTW!    
